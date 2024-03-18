@@ -5,10 +5,12 @@ deploy:
     manifests:
       - ./infra/k8s/*
 build:
-  local:
-    push: false
+  # local:
+  #   push: false
+  googleCloudBuild:
+    projectId: aaich-dev
   artifacts:
-    - image: highonranking/auth
+    - image: asia.gcr.io/aaich-dev/auth
       context: auth
       docker:
         dockerfile: Dockerfile

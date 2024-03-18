@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: highonranking/auth
+          image: asia.gcr.io/aaich-dev/auth
 ---
 apiVersion: v1
 kind: Service
